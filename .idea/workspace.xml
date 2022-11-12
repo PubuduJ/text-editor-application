@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4c6d5c0-ee0e-4d28-b7c8-43adb0bf06c4" name="Changes" comment="" />
+    <list default="true" id="d4c6d5c0-ee0e-4d28-b7c8-43adb0bf06c4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SplashScreenFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/loadingCircle.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/SplashScreenForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppInitializer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -32,9 +39,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/pubudu/Documents/Git Projects/Text Editor/simple-text-editor/src/main/resources/img",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/img" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="simple-text-editor" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -70,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668266028458</updated>
-      <workItem from="1668266032973" duration="1083000" />
+      <workItem from="1668266032973" duration="2959000" />
     </task>
     <servers />
   </component>
