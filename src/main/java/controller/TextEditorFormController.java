@@ -11,6 +11,7 @@ import javafx.scene.control.IndexRange;
 import javafx.scene.control.MenuItem;
 import javafx.scene.input.Clipboard;
 import javafx.scene.input.ClipboardContent;
+import javafx.scene.input.DataFormat;
 import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
 
@@ -107,7 +108,22 @@ public class TextEditorFormController {
     }
 
     public void mnuPaste_OnAction(ActionEvent actionEvent) {
-
+        Clipboard clipboard = Clipboard.getSystemClipboard();
+        if (!clipboard.hasContent(DataFormat.PLAIN_TEXT) || clipboard.getString().isEmpty()) {
+            new Alert(Alert.AlertType.ERROR,"First copy a text to clipboard to paste!").showAndWait();
+            return;
+        }
+        if (txtEditor.getSelectedText().length() < 1) {
+            new Alert(Alert.AlertType.INFORMATION,"Please select a text area to paste!").showAndWait();
+            txtEditor.requestFocus();
+            return;
+        }
+        String addText = clipboard.getString();
+        IndexRange range = txtEditor.getSelection();
+        String originalText = txtEditor.getText();
+        String firstPart = originalText.substring(0,range.getStart());
+        String lastPart = originalText.substring(range.getEnd(),originalText.length());
+        txtEditor.setText(firstPart + addText + lastPart);
     }
 
     public void mnuSelectAll_OnAction(ActionEvent actionEvent) {
