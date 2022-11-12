@@ -1,6 +1,7 @@
 package controller;
 
 import com.jfoenix.controls.JFXTextArea;
+import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.print.Printer;
@@ -8,6 +9,7 @@ import javafx.print.PrinterJob;
 import javafx.scene.control.Alert;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
+import javafx.util.Duration;
 
 public class TextEditorFormController {
 
@@ -25,7 +27,10 @@ public class TextEditorFormController {
     public MenuItem mnuAbout;
 
     public void initialize() {
-
+        FadeTransition fd = new FadeTransition(Duration.millis(1500),pneContainer);
+        fd.setFromValue(0);
+        fd.setToValue(1);
+        fd.playFromStart();
     }
 
     public void mnuNew_OnAction(ActionEvent actionEvent) {
