@@ -6,38 +6,38 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="428.0" prefWidth="329.0" style="-fx-background-color: rgba(0,0,0,0);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SplashScreenFormController">
+<AnchorPane prefHeight="502.0" prefWidth="376.0" style="-fx-background-color: rgba(0,0,0,0);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SplashScreenFormController">
    <children>
-      <AnchorPane layoutX="12.0" layoutY="300.0" prefHeight="116.0" prefWidth="306.0" style="-fx-background-color: #D1F0FF; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #759C9E; -fx-border-width: 2;">
+      <AnchorPane layoutX="13.0" layoutY="356.0" prefHeight="141.0" prefWidth="351.0" style="-fx-background-color: #D1F0FF; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #759C9E; -fx-border-width: 2;">
          <children>
-            <Label layoutX="102.0" layoutY="5.0" style="-fx-text-fill: #4F419E;" text="Simple Text Editor" AnchorPane.leftAnchor="102.0">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="124.0" layoutY="14.0" prefHeight="28.0" prefWidth="221.0" style="-fx-text-fill: #4F419E;" text="Simple Text Editor" AnchorPane.leftAnchor="124.0">
                <font>
-                  <Font name="Cantarell Bold" size="22.0" />
+                  <Font name="Cantarell Bold" size="25.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="102.0" layoutY="33.0" prefHeight="28.0" prefWidth="179.0" style="-fx-text-fill: #4F419E;" text="Application" textAlignment="CENTER">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="131.0" layoutY="45.0" prefHeight="28.0" prefWidth="207.0" style="-fx-text-fill: #4F419E;" text="Application" textAlignment="CENTER">
                <font>
-                  <Font name="Cantarell Bold" size="22.0" />
+                  <Font name="Cantarell Bold" size="25.0" />
                </font>
             </Label>
-            <Label fx:id="lblStatus" alignment="CENTER" contentDisplay="CENTER" layoutX="102.0" layoutY="66.0" prefHeight="23.0" prefWidth="196.0" style="-fx-padding: 5 0 0 0;">
+            <Label fx:id="lblStatus" alignment="CENTER" contentDisplay="CENTER" layoutX="131.0" layoutY="83.0" prefHeight="23.0" prefWidth="207.0" style="-fx-padding: 5 0 0 0;">
                <font>
-                  <Font name="Cantarell Bold" size="14.0" />
+                  <Font name="Cantarell Bold" size="16.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="10.0" layoutY="93.0" text="Copyright © 2022 PubuduJ. All Rights Reserved. " AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <Label alignment="CENTER" layoutX="4.0" layoutY="119.0" text="Copyright © 2022 PubuduJ. All Rights Reserved. " AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0">
                <font>
                   <Font name="Cantarell Bold" size="13.0" />
                </font>
             </Label>
-            <ImageView fitHeight="102.0" fitWidth="84.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="112.0" fitWidth="118.0" layoutX="6.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/logo.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <ImageView fitHeight="286.0" fitWidth="315.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="349.0" fitWidth="377.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/loadingCircle.gif" />
          </image>

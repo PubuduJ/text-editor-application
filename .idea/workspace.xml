@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4c6d5c0-ee0e-4d28-b7c8-43adb0bf06c4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TextEditorFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TextEditorFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/SplashScreenForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/SplashScreenForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668266028458</updated>
-      <workItem from="1668266032973" duration="7497000" />
+      <workItem from="1668266032973" duration="7862000" />
     </task>
     <servers />
   </component>
