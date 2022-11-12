@@ -3,6 +3,9 @@ package controller;
 import com.jfoenix.controls.JFXTextArea;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
+import javafx.print.Printer;
+import javafx.print.PrinterJob;
+import javafx.scene.control.Alert;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
 
@@ -38,7 +41,24 @@ public class TextEditorFormController {
     }
 
     public void mnuPrint_OnAction(ActionEvent actionEvent) {
-
+        if (Printer.getDefaultPrinter() == null) {
+            new Alert(Alert.AlertType.ERROR,"No default printer has been selected").showAndWait();
+            return;
+        }
+        PrinterJob printerJob = PrinterJob.createPrinterJob();
+        if (printerJob != null) {
+            printerJob.showPageSetupDialog(pneContainer.getScene().getWindow());
+            boolean success = printerJob.printPage(txtEditor);
+            if (success) {
+                printerJob.endJob();
+            }
+            else {
+                new Alert(Alert.AlertType.ERROR,"Failed to print, try again").showAndWait();
+            }
+        }
+        else {
+            new Alert(Alert.AlertType.ERROR,"Failed to initialize a new printer job").show();
+        }
     }
 
     public void mnuClose_OnAction(ActionEvent actionEvent) {
