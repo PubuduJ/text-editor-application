@@ -98,6 +98,7 @@ public class TextEditorFormController {
             txtEditor.requestFocus();
             return;
         }
+
         Clipboard clipboard = Clipboard.getSystemClipboard();
         String text = txtEditor.getSelectedText();
         ClipboardContent content = new ClipboardContent();
