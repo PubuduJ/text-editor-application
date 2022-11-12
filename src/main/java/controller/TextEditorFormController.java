@@ -93,7 +93,16 @@ public class TextEditorFormController {
     }
 
     public void mnuCopy_OnAction(ActionEvent actionEvent) {
-
+        if (txtEditor.getSelectedText().isEmpty()) {
+            new Alert(Alert.AlertType.ERROR,"First select a text to copy!").showAndWait();
+            txtEditor.requestFocus();
+            return;
+        }
+        Clipboard clipboard = Clipboard.getSystemClipboard();
+        String text = txtEditor.getSelectedText();
+        ClipboardContent content = new ClipboardContent();
+        content.putString(text);
+        clipboard.setContent(content);
     }
 
     public void mnuPaste_OnAction(ActionEvent actionEvent) {
