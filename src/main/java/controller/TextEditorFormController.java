@@ -7,7 +7,10 @@ import javafx.event.ActionEvent;
 import javafx.print.Printer;
 import javafx.print.PrinterJob;
 import javafx.scene.control.Alert;
+import javafx.scene.control.IndexRange;
 import javafx.scene.control.MenuItem;
+import javafx.scene.input.Clipboard;
+import javafx.scene.input.ClipboardContent;
 import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
 
@@ -71,7 +74,22 @@ public class TextEditorFormController {
     }
 
     public void mnuCut_OnAction(ActionEvent actionEvent) {
+        if (txtEditor.getSelectedText().isEmpty()) {
+            new Alert(Alert.AlertType.ERROR,"First select a text to cut!").showAndWait();
+            txtEditor.requestFocus();
+            return;
+        }
+        Clipboard clipboard = Clipboard.getSystemClipboard();
+        ClipboardContent content = new ClipboardContent();
+        String segment = txtEditor.getSelectedText();
+        content.putString(segment);
+        clipboard.setContent(content);
 
+        IndexRange range = txtEditor.getSelection();
+        String originalText = txtEditor.getText();
+        String firstPart = originalText.substring(0,range.getStart());
+        String lastPart = originalText.substring(range.getEnd());
+        txtEditor.setText(firstPart+lastPart);
     }
 
     public void mnuCopy_OnAction(ActionEvent actionEvent) {
