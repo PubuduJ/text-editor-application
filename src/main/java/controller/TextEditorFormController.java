@@ -1,8 +1,28 @@
 package controller;
 
+import com.jfoenix.controls.JFXTextArea;
 import javafx.event.ActionEvent;
+import javafx.scene.control.MenuItem;
+import javafx.scene.layout.AnchorPane;
 
 public class TextEditorFormController {
+
+    public AnchorPane pneContainer;
+    public JFXTextArea txtEditor;
+    public MenuItem mnuNew;
+    public MenuItem mnuOpen;
+    public MenuItem mnuSave;
+    public MenuItem mnuPrint;
+    public MenuItem mnuClose;
+    public MenuItem mnuCut;
+    public MenuItem mnuCopy;
+    public MenuItem mnuPaste;
+    public MenuItem mnuSelectAll;
+    public MenuItem mnuAbout;
+
+    public void initialize() {
+
+    }
 
     public void mnuNew_OnAction(ActionEvent actionEvent) {
 
