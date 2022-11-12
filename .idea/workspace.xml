@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4c6d5c0-ee0e-4d28-b7c8-43adb0bf06c4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/about.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/img/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/cut.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/img/new.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/img/open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/paste.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/img/print.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/img/save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/select all.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/TextEditorFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TextEditorFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/TextEditorForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/TextEditorForm.fxml" afterDir="false" />
@@ -85,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668266028458</updated>
-      <workItem from="1668266032973" duration="4676000" />
+      <workItem from="1668266032973" duration="5058000" />
     </task>
     <servers />
   </component>
