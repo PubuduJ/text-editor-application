@@ -1,6 +1,7 @@
 package controller;
 
 import com.jfoenix.controls.JFXTextArea;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
@@ -41,7 +42,7 @@ public class TextEditorFormController {
     }
 
     public void mnuClose_OnAction(ActionEvent actionEvent) {
-
+        Platform.exit();
     }
 
     public void mnuCut_OnAction(ActionEvent actionEvent) {
