@@ -29,7 +29,7 @@ public class TextEditorFormController {
     }
 
     public void mnuNew_OnAction(ActionEvent actionEvent) {
-
+        txtEditor.setText("");
     }
 
     public void mnuOpen_OnAction(ActionEvent actionEvent) {
