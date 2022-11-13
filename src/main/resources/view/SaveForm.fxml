@@ -24,7 +24,7 @@
                   </Label>
                   <HBox prefHeight="33.0" prefWidth="254.0" spacing="5.0" style="-fx-background-color: grey; -fx-background-radius: 5; -fx-border-radius: 5;">
                      <children>
-                        <JFXTextField fx:id="txtFileName" alignment="CENTER_RIGHT" labelFloat="true" prefHeight="31.0" prefWidth="253.0" promptText="Ex: My Text File" style="-fx-text-fill: white;">
+                        <JFXTextField fx:id="txtFileName" alignment="CENTER_RIGHT" labelFloat="true" prefHeight="31.0" prefWidth="253.0" promptText="Eg: My Text File" style="-fx-text-fill: white;">
                            <font>
                               <Font name="Cantarell Bold" size="16.0" />
                            </font>
