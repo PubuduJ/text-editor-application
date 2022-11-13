@@ -1,0 +1,10 @@
+#combo-box {
+    -fx-border-width: 0.5px;
+    -fx-border-color: lightgrey;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-font-size: 15px;
+    -fx-padding: 0px;
+    -fx-font-weight: 700;
+    -fx-font-family: 'Cantarell', 'sans-serif';
+}

@@ -22,6 +22,7 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.io.*;
+import java.net.URL;
 
 public class TextEditorFormController {
 
@@ -85,8 +86,23 @@ public class TextEditorFormController {
         }
     }
 
-    public void mnuSave_OnAction(ActionEvent actionEvent) {
+    public void mnuSave_OnAction(ActionEvent actionEvent) throws IOException {
+        URL resource = this.getClass().getResource("/view/SaveForm.fxml");
+        FXMLLoader fxmlLoader = new FXMLLoader(resource);
+        Parent root = fxmlLoader.load();
 
+        SaveFormController ctrl = fxmlLoader.getController();
+        ctrl.setData(txtEditor.getText());
+
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.setTitle("Save File");
+        stage.setResizable(false);
+        stage.sizeToScene();
+        stage.centerOnScreen();
+        stage.show();
     }
 
     public void mnuPrint_OnAction(ActionEvent actionEvent) {
