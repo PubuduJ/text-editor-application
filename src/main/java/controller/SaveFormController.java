@@ -13,6 +13,9 @@ import javafx.stage.DirectoryChooser;
 import javafx.util.Duration;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Optional;
 
 public class SaveFormController {
@@ -42,7 +45,7 @@ public class SaveFormController {
         content = editorContent;
     }
 
-    public void btnOK_OnAction(ActionEvent actionEvent) {
+    public void btnOK_OnAction(ActionEvent actionEvent) throws IOException {
         if (txtFileName.getText().isBlank()) {
             new Alert(Alert.AlertType.ERROR,"File name cannot be empty!").showAndWait();
             txtFileName.selectAll();
@@ -79,7 +82,23 @@ public class SaveFormController {
             System.out.println(txtFilePath.getText().substring(txtFilePath.getText().lastIndexOf("/")+1,txtFilePath.getText().lastIndexOf(".")));
             return;
         }
-        System.out.println("OK");
+        pneSaveForm.getScene().getWindow().hide();
+        file.createNewFile();
+        if (cmbFormat.getSelectionModel().getSelectedItem().equals(".txt")) {
+            byte[] bytes = content.getBytes();
+            FileOutputStream fos = new FileOutputStream(file);
+            for (byte aByte : bytes) {
+                fos.write(aByte);
+            }
+        }
+        else if (cmbFormat.getSelectionModel().getSelectedItem().equals(".encrypted")) {
+            byte[] bytes = content.getBytes();
+            FileOutputStream fos = new FileOutputStream(file);
+            for (byte aByte : bytes) {
+                fos.write(aByte + 1);
+            }
+        }
+        new Alert(Alert.AlertType.INFORMATION,"Files has been saved successfully").showAndWait();
     }
 
     public void btnBrowsePath_OnAction(ActionEvent actionEvent) {

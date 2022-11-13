@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="pneSaveForm" prefHeight="212.0" prefWidth="554.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SaveFormController">
    <children>
       <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="101.0" prefWidth="476.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: lightgrey; -fx-border-width: 5;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
@@ -53,7 +52,7 @@
             </HBox>
             <FlowPane alignment="CENTER" hgap="10.0" layoutX="5.0" layoutY="139.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
                <children>
-                  <JFXButton fx:id="btnOK" onAction="#btnOK_OnAction" prefHeight="32.0" prefWidth="140.0" style="-fx-background-color: green; -fx-text-fill: white;" text="OK">
+                  <JFXButton fx:id="btnOK" defaultButton="true" onAction="#btnOK_OnAction" prefHeight="32.0" prefWidth="140.0" style="-fx-background-color: green; -fx-text-fill: white;" text="OK">
                      <font>
                         <Font name="Cantarell Extra Bold" size="16.0" />
                      </font>

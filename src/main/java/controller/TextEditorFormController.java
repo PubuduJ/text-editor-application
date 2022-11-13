@@ -61,6 +61,7 @@ public class TextEditorFormController {
             FileInputStream fis = new FileInputStream(file);
             BufferedInputStream bis = new BufferedInputStream(fis);
             if (file.getName().contains(".txt")) {
+                txtEditor.setText("");
                 while (true) {
                     byte[] buffer = new byte[1024 * 10];
                     int read = bis.read(buffer);
@@ -72,6 +73,7 @@ public class TextEditorFormController {
                 bis.close();
             }
             else if (file.getName().contains(".encrypted")) {
+                txtEditor.setText("");
                 while (true) {
                     byte[] buffer = new byte[1024 * 10];
                     int read = bis.read(buffer);
