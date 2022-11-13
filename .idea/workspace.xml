@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4c6d5c0-ee0e-4d28-b7c8-43adb0bf06c4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/SplashScreenForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/SplashScreenForm.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="d4c6d5c0-ee0e-4d28-b7c8-43adb0bf06c4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,15 +27,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/pubudu/Documents/Git Projects/Text Editor/simple-text-editor/src/main/resources/img",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/pubudu/Documents/Git Projects/Text Editor/simple-text-editor/src/main/resources/img&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/img" />
@@ -78,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668266028458</updated>
-      <workItem from="1668266032973" duration="7862000" />
+      <workItem from="1668266032973" duration="8141000" />
     </task>
     <servers />
   </component>
