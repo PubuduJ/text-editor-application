@@ -1,7 +1,5 @@
 # Simple Text Editor Application <img src="asset/editor-logo.png" alt="drawing" width="27px"/>
 
-<hr>
-
 ### A simple Java-FX technology based text editor application
 
 This is a simple text editor that can create and edit your text files.
@@ -19,16 +17,16 @@ application **only**.
 - It has the cut, copy, past and select all, basic text editing options.
 
 #### Key highlights of the UI
-1. **Text editor user interface**<br>
+1. Text editor user interface<br>
 <img src="asset/text-editor.png" alt="text-editor" width="500px"/>
 
-2. **Text editor splash screen**<br>
+2. Text editor splash screen<br>
 <img src="asset/splash-screen.png" alt="text-editor" width="300px"/>
 
-3. **Save modal window**<br>
+3. Save modal window<br>
 <img src="asset/save-window.png" alt="text-editor" width="500px"/>
 
-4. **About window**<br>
+4. About window<br>
 <img src="asset/about-window.png" alt="text-editor" width="250px"/>
 
 ## Used Technologies
