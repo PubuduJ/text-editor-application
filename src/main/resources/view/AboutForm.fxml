@@ -7,14 +7,8 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="pneAboutForm" prefHeight="344.0" prefWidth="319.0" style="-fx-background-color: #EAFAF9;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutFormController">
    <children>
-      <ImageView fitHeight="208.0" fitWidth="206.0" layoutX="57.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../simple-text-editor-app/src/main/resources/image/logo.png" />
-         </image>
-      </ImageView>
       <FlowPane alignment="CENTER" layoutY="239.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Label text="Simple Text Editor">
@@ -51,5 +45,10 @@
             </Label>
          </children>
       </FlowPane>
+      <ImageView fitHeight="219.0" fitWidth="219.0" layoutX="50.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

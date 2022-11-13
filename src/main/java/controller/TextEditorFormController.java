@@ -4,8 +4,11 @@ import com.jfoenix.controls.JFXTextArea;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.print.Printer;
 import javafx.print.PrinterJob;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.IndexRange;
 import javafx.scene.control.MenuItem;
@@ -13,7 +16,11 @@ import javafx.scene.input.Clipboard;
 import javafx.scene.input.ClipboardContent;
 import javafx.scene.input.DataFormat;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import javafx.util.Duration;
+
+import java.io.IOException;
 
 public class TextEditorFormController {
 
@@ -130,7 +137,15 @@ public class TextEditorFormController {
 
     }
 
-    public void mnuAbout_OnAction(ActionEvent actionEvent) {
-
+    public void mnuAbout_OnAction(ActionEvent actionEvent) throws IOException {
+        Parent root = FXMLLoader.load(this.getClass().getResource("/view/AboutForm.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setResizable(false);
+        stage.setTitle("About");
+        stage.setScene(scene);
+        stage.centerOnScreen();
+        stage.show();
     }
 }
