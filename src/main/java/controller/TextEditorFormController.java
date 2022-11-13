@@ -16,11 +16,12 @@ import javafx.scene.input.Clipboard;
 import javafx.scene.input.ClipboardContent;
 import javafx.scene.input.DataFormat;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-import java.io.IOException;
+import java.io.*;
 
 public class TextEditorFormController {
 
@@ -48,8 +49,40 @@ public class TextEditorFormController {
         txtEditor.setText("");
     }
 
-    public void mnuOpen_OnAction(ActionEvent actionEvent) {
-
+    public void mnuOpen_OnAction(ActionEvent actionEvent) throws IOException {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
+        fileChooser.setTitle("Select a file to open");
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("*.txt","*.txt"));
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("*.encrypted","*.encrypted"));
+        File file = fileChooser.showOpenDialog(pneContainer.getScene().getWindow());
+        if (file != null) {
+            FileInputStream fis = new FileInputStream(file);
+            BufferedInputStream bis = new BufferedInputStream(fis);
+            if (file.getName().contains(".txt")) {
+                while (true) {
+                    byte[] buffer = new byte[1024 * 10];
+                    int read = bis.read(buffer);
+                    if (read == -1) break;
+                    for (byte b : buffer) {
+                        txtEditor.appendText(String.valueOf((char) b));
+                    }
+                }
+                bis.close();
+            }
+            else if (file.getName().contains(".encrypted")) {
+                while (true) {
+                    byte[] buffer = new byte[1024 * 10];
+                    int read = bis.read(buffer);
+                    if (read == -1) break;
+                    for (int i = 0; i < read; i++) {
+                        buffer[i] = (byte) (buffer[i] - 1);
+                        txtEditor.appendText(String.valueOf((char)buffer[i]));
+                    }
+                }
+                bis.close();
+            }
+        }
     }
 
     public void mnuSave_OnAction(ActionEvent actionEvent) {
@@ -134,7 +167,7 @@ public class TextEditorFormController {
     }
 
     public void mnuSelectAll_OnAction(ActionEvent actionEvent) {
-
+        txtEditor.selectAll();
     }
 
     public void mnuAbout_OnAction(ActionEvent actionEvent) throws IOException {
