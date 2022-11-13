@@ -57,11 +57,17 @@
                      <font>
                         <Font name="Cantarell Extra Bold" size="16.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </JFXButton>
                   <JFXButton fx:id="btnBrowsePath" onAction="#btnBrowsePath_OnAction" prefHeight="32.0" prefWidth="140.0" style="-fx-background-color: #2F1F66; -fx-text-fill: white;" text="BROWSE PATH">
                      <font>
                         <Font name="Cantarell Extra Bold" size="16.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </JFXButton>
                </children>
             </FlowPane>
