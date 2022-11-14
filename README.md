@@ -8,7 +8,7 @@ as well as encrypted text files with the **.encrypted** extension.
 The saved encrypted text files can be opened by this text editor 
 application **only**.
 
-#### The main key features of the simple text editor application as follows,
+#### The main key features as follows,
 
 - It can open any type of plain text file and text files with .encrypted file extension which have already been saved by text editor application.
 - It is unique text editor which can open up this **.encrypted** text files.
@@ -16,7 +16,7 @@ application **only**.
 - It has the text files printing facility.
 - It has the cut, copy, past and select all, basic text editing options.
 
-#### Key highlights of the UI
+#### Images of the user interfaces
 1. Text editor user interface<br>
 <img src="asset/text-editor.png" alt="text-editor" width="500px"/>
 
@@ -40,7 +40,7 @@ application **only**.
 #### Used Integrated Development Environment
 - IntelliJ IDEA
 
-## How to use this repository
+## How to use ?
 This project can be used by cloning the 
 project to your local computer or running the project jar file.
 
@@ -54,7 +54,10 @@ project to your local computer or running the project jar file.
 2. Open terminal from the file copied directory.
 3. Execute `java -jar simple-text-editor.jar` command from the terminal.
 
-## Project Version
+## Credits
+This project was carried out under the guidance of the [IJSE](https://www.ijse.lk/) Direct Entry Program 9.
+
+## Version
 v1.0.0
 
 ## License
