@@ -6,15 +6,17 @@ This is a simple text editor that can create and edit your text files.
 The text files can be saved as regular text files with the **.txt** extension 
 as well as encrypted text files with the **.encrypted** extension. 
 The saved encrypted text files can be opened by this text editor 
-application **only**.
+application only.
 
 #### The main key features as follows,
 
 - It can open any type of plain text file and text files with .encrypted file extension which have already been saved by text editor application.
-- It is unique text editor which can open up this **.encrypted** text files.
+- It is unique text editor which can open up this .encrypted text files.
 - It can save both plain text files and encrypted text files.
 - It has the text files printing facility.
 - It has the cut, copy, past and select all, basic text editing options.
+
+The goal of this project was to improve the knowledge of Java-FX, Java, and file handling in Java.
 
 #### Images of the user interfaces
 1. Text editor user interface<br>
