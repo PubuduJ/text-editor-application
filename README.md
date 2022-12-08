@@ -47,7 +47,7 @@ This project can be used by cloning the
 project to your local computer or running the project jar file.
 
 #### Clone this repository
-1. Clone the project using `git clone https://github.com/PubuduJ/fuel-pass-app-clone.git` terminal command.
+1. Clone the project using `git clone https://github.com/PubuduJ/text-editor-application.git` terminal command.
 2. Open the `pom.xml` file from **IntelliJ IDEA**, make sure to open this as a project.
 3. To run this application execute `mvn javafx:run` goal or create separate maven configuration in **IntelliJ IDEA**.
 
